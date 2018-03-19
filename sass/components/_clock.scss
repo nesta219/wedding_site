@@ -1,0 +1,72 @@
+.countdown-row {
+	clear: both;
+	width: 100%;
+	text-align: center;
+
+	.countdown-section {
+		display: block;
+		float: left;
+		font-size: 75%;
+		text-align: center;
+	}
+
+	.countdown-amount {
+		font-family: $parisienne;
+		font-size: 48px;
+	    display: block;
+	    @include media-query(776px) {
+			font-size: 30px;
+		}
+	}
+
+	.countdown-period {
+	    display: block;
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    @include media-query(776px) {
+			font-size: 12px;
+		}
+		
+	    @include media-query(400px) {
+			font-size: 10px;
+		}
+	}
+}
+
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+
+.countdown-show4 .countdown-section {
+	width: 25%;
+	padding: 55px 5px;
+	&:nth-child(even) {
+		background-color: darken($theme-primary-color, 3%);
+	}
+
+	@include media-query(776px) {
+		padding: 25px 0;
+	}
+}
+
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+
+

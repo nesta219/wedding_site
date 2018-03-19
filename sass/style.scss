@@ -1,0 +1,55 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: 	Sweetheart - Responsive Wedding Template
+Version:        1.0.0
+Author:         AStheme
+URL:            http://themeforest.net/user/astheme
+-------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+#0.1  Theme Reset Style
+#0.2  Global Elements
+#0.3  important-people
+#0.4  footer
+#0.5  hero slider
+#0.6  count down
+#0.7  couple
+#0.8  story
+#0.9  events
+#1.0  bquotes
+#1.1  gallery
+#1.2  gift registry
+#1.3  rsvp
+#1.4  journal
+
+-------------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/preloader";
+@import "components/clock";
+@import "components/section-title";
+@import "components/boxs-groomsmen-bridesmaids-gallery";
+@import "components/buttons";
+@import "components/form";
+@import "components/sticky-header";
+@import "components/social-links";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/hero-slider";
+
+// page
+@import "page/home-default";
+
+
