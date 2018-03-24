@@ -365,16 +365,11 @@
     /*------------------------------------------
         = GOOGLE MAP
     -------------------------------------------*/
-    function map() {
+    function map(locations, mapId, zoomLevel) {
 
-        var locations = [
-            ['Stoltzfus Homestead & Gardens', 40.035934,-76.1020856,1],
-            ['Courtyard Marriott', 40.049233,-76.249338,2],
-        ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: new google.maps.LatLng( 40.039271,-76.1740119),
-            zoom: 10,
+        var map = new google.maps.Map(document.getElementById(mapId), {
+            center: new google.maps.LatLng( locations[0][1], locations[0][2]),
+            zoom: zoomLevel,
             scrollwheel: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
 
@@ -421,7 +416,22 @@
             masonryGridSetting();
 
             if ($(".map").length) {
-                map();
+                map(
+                    [
+                      ['Stoltzfus Homestead & Gardens', 40.0359299,-76.1020856]
+                    ],
+                    'map1',
+                    11
+                );
+
+                map(
+                    [
+                        ['Courtyard Marriott', 40.049233,-76.249338,2],
+                        ['Hampton Inn Lancaster', 40.0532363,-76.2549048]
+                    ],
+                    'map2',
+                    12
+                );
             }
         });
 
