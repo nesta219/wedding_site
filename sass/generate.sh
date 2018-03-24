@@ -1,2 +1,2 @@
 #!/bin/bash
-sass style.scss > ../css/style.css --sourcemap
+sass style.scss > ../css/style.css
